@@ -1,0 +1,39 @@
+{
+	"name": "react-component-library",
+	"version": "1.0.4",
+	"description": "React Component Library from COMPANY NAME",
+	"main": "dist/index.js",
+	"peerDependencies": {
+		"react": "^16.8.6"
+	},
+	"dependencies": {
+		"moment": "^2.24.0",
+		"numeral": "^2.0.6",
+		"react": "^16.8.6",
+		"react-icons": "^3.5.0"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "webpack --mode development --watch",
+		"build": "webpack --mode development"
+	},
+	"author": {
+		"name": "Brian Moore",
+		"email": "brian.moore@COMPANY.com"
+	},
+	"devDependencies": {
+		"webpack": "^4.30.0",
+		"babel": "^6.23.0",
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.24.1",
+		"babel-loader": "^7.0.0",
+		"babel-plugin-transform-object-rest-spread": "^6.23.0",
+		"babel-plugin-transform-react-jsx": "^6.24.1",
+		"babel-preset-env": "^1.7.0",
+		"css-loader": "^2.1.1",
+		"file-loader": "^3.0.1",
+		"style-loader": "^0.23.1",
+		"url-loader": "^1.1.2",
+		"webpack-cli": "^3.3.1"
+	}
+}

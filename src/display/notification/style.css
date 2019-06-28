@@ -1,0 +1,75 @@
+.react-component-library.Notification {
+	position: absolute;
+	width: 0;
+	z-index: 79;
+	box-shadow: var(--shadow);
+	border-radius: 4px;
+	opacity: 0;
+	overflow: hidden;
+}
+
+.react-component-library.Notification.Open { animation: Notification 0.3s ease forwards; }
+.react-component-library.Notification.Closed { animation: NotificationClose 0.3s ease forwards; }
+
+@keyframes Notification {
+	from {
+		opacity: 0;
+		width: 0;
+	}
+	to {
+		opacity: 1;
+		width: 400px;
+	}
+}
+
+@keyframes NotificationClose {
+	to {
+		opacity: 0;
+		width: 0;
+	}
+	from {
+		opacity: 1;
+		width: 400px;
+	}
+}
+
+.react-component-library.Notification.error { background: var(--error); }
+.react-component-library.Notification.info { background: var(--info); }
+.react-component-library.Notification.success { background: var(--success); }
+
+.react-component-library.Notification .Icon-Container {
+	background: rgba(0,0,0,0.1);
+	float: left;
+	width: 60px;
+	height: 100%;
+	min-height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.react-component-library.Notification .Icon-Container svg {
+	color: white;
+	width: 30px;
+	height: 30px;
+}
+
+.react-component-library.Notification .Text-Container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: calc(100% - 60px);
+	min-width: 340px;
+	height: auto;
+	min-height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.react-component-library.Notification .Text-Container p {
+	width: 100%;
+	margin: 0;
+	padding: 16px;
+	color: white;
+}

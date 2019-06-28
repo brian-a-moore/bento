@@ -1,0 +1,39 @@
+.react-component-library {
+	--primary:#0e92c7 !default;
+	--primary-hover: #0d85b5 !default;
+	--primary-light: #d8f2fc !default;
+	--secondary: #e7e7e8 !default;
+	--secondary-hover: #c4c4c5 !default;
+	--secondary-text: #767679 !default;
+	--inactive: #c4c4c5 !default;
+	--error: #bf2e1b !default;
+	--info: #e8b417 !default;
+	--success: #79ad65 !default;
+	--background: #e7e7e8 !default;
+	--input-background: #e7e7e8 !default;
+	--shadow: 0 1px 3px rgba(0,0,0,0.2) !default;
+	--transition: all 0.3s ease !default;
+	--text: #3b3b3f !default;
+}
+
+.react-component-library {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 12px;
+	color: var(--text);
+	font-weight: normal;
+	box-sizing: border-box;
+}
+
+.react-component-library {
+	box-sizing: border-box;
+	font-family: 'Helvetica';
+	font-size: 12px;
+}
+
+.react-component-library button, button.react-component-library {
+	background: transparent;
+	margin: 0; padding: 0;
+	border: none; outline: none;
+}
+
+.react-component-library button:enabled, button.react-component-library:enabled { cursor: pointer; }

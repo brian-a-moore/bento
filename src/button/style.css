@@ -1,0 +1,139 @@
+.react-component-library.Button {
+	float: left;
+	height: 40px;
+	margin: 0; padding: 0;
+	box-shadow: var(--shadow);
+	transition: var(--transition);
+	text-transform: uppercase;
+	overflow: hidden;
+	background: transparent;
+	margin: 0; padding: 0;
+	border: none; outline: none;
+	border-radius: 4px;
+}
+
+.react-component-library.Button:enabled { cursor: pointer; }
+
+/* Multi */
+.react-component-library.Button.Multi {
+	width: 100%;
+}
+
+.react-component-library.Button.Multi p {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 8px 16px;
+	user-select: none;
+}
+
+
+/* Icon */
+.react-component-library.Button.Icon {
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.react-component-library.Button.Icon.Rounded {
+	border-radius: 50%;
+}
+
+.react-component-library.Button.Icon svg {
+	width: 20px;
+	height: 20px;
+	user-select: none;
+}
+
+/* IconText */
+.react-component-library.Button.IconText {
+}
+
+.react-component-library.Button.IconText .IconContainer {
+	float: left;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.react-component-library.Button.IconText.Alt .IconContainer {
+	float: right;
+	width: 52px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.react-component-library.Button.IconText .IconContainer svg {
+	width: 20px;
+	height: 20px;
+	user-select: none;
+}
+
+.react-component-library.Button.IconText span {
+	float: left;
+	line-height: 40px;
+	padding: 0 16px 0 0;
+	user-select: none;
+}
+
+.react-component-library.Button.IconText.Alt span {
+	float: left;
+	line-height: 40px;
+	padding: 0 0 0 16px;
+	user-select: none;
+}
+
+/* Text */
+.react-component-library.Button.Text {
+	width: auto;
+}
+
+.react-component-library.Button.Text span {
+	float: left;
+	width: 100%;
+	line-height: 40px;
+	padding: 0 32px;
+	user-select: none;
+}
+
+/* Active */
+.react-component-library.Button:active {
+	transform: scale(0.9);
+}
+
+/* Primary */
+.react-component-library.Button.Primary {
+	background: var(--primary);
+	color: white;
+}
+.react-component-library.Button.Primary:hover { background: var(--primary-hover); }
+
+/* Secondary */
+.react-component-library.Button.Secondary {
+	background: var(--secondary);
+	color: var(--secondary-text);
+}
+
+.react-component-library.Button.Secondary:hover { background: var(--secondary-hover); }
+
+/* Transparent */
+.react-component-library.Button.Transparent {
+	background: transparent;
+	color: var(--secondary-text);
+	box-shadow: none;
+}
+
+.react-component-library.Button.Transparent:hover { background: rgba(0,0,0,0.2); }
+
+.react-component-library.Button.White {
+	background: transparent;
+	color: white;
+	box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+.react-component-library.Button.White:hover { background: rgba(255,255,255,0.1); }

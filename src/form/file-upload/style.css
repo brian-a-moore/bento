@@ -1,0 +1,66 @@
+.react-component-library.FileUpload {
+	float: left;
+	width: 100%;
+	margin: 0 0 16px 0;
+	color: var(--text);
+}
+
+.react-component-library.FileUpload label {
+	position: relative;
+	float: left;
+	max-width: 100%;
+	height: 40px;
+	margin: 0 0 16px 0;
+	padding: 0 32px;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 4px;
+	box-shadow: var(--shadow);
+	cursor: pointer;
+	transition: var(--transition);
+	overflow: hidden;
+	z-index: 3;
+}
+
+.react-component-library.FileUpload label:hover {
+	box-shadow: 0 0 5px var(--primary);
+}
+
+.react-component-library.FileUpload label:active { transform: scale(0.9); }
+
+.react-component-library.FileUpload label::before {
+	background: var(--input-background);
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	content: '';
+	z-index: -3;
+}
+
+.react-component-library.FileUpload label.Active::before { background: var(--primary); }
+
+.react-component-library.FileUpload input { display: none; }
+
+.react-component-library.FileUpload label svg {
+	float: left;
+	width: 20px; height: 20px;
+	margin: 9px 0;
+}
+
+.react-component-library.FileUpload label.Active svg { color: white; }
+
+.react-component-library.FileUpload label p {
+	position: relative;
+	float: left;
+	width: auto;
+	height: 38px;
+	line-height: 38px;
+	margin: 0; padding: 0 0 0 16px;
+	font-weight: normal;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	user-select: none;
+	z-index: +3;
+}
+
+.react-component-library.FileUpload label.Active p { color: white; }

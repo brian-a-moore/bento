@@ -1,0 +1,124 @@
+.react-component-library.Calendar {
+	float: left;
+	width: 100%;
+	margin: 0 0 16px 0;
+}
+
+.react-component-library.Calendar .CalendarText {
+	background: rgba(0,0,0,0.05);
+	float: left;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 16px;
+	border: 1px solid rgba(0,0,0,0.1);
+	outline: none;
+	border-radius: 4px;
+	box-shadow: var(--shadow);
+	transition: var(--transition);
+	color: var(--text);
+	cursor: pointer;
+}
+
+.react-component-library.Calendar .CalendarText:hover {
+	box-shadow: 0 0 5px var(--primary);
+}
+
+.react-component-library.Calendar .CalendarModal {
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0; left: 0;
+	width: 100vw;
+	height: 100vh;
+	padding: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 89;
+	opacity: 0;
+	animation: openModal 0.3s ease forwards;
+}
+
+.react-component-library.Calendar.Close .CalendarModal {
+	animation: closeModal 0.3s ease forwards;
+}
+
+@keyframes openModal {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes closeModal {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+
+.react-component-library.Calendar .CalendarModal .CalendarBox {
+	width: 280px;
+}
+
+.react-component-library.Calendar .CalendarModal .CalendarBox button.SetBtns {
+	background: var(--primary);
+	float: left;
+	width: 40px;
+	height: 40px;
+	color: white;
+}
+
+.react-component-library.Calendar .CalendarModal .CalendarBox button.SetBtns svg {
+	float: left;
+	width: 100%;
+	height: 100%;
+	transform: scale(0.75);
+	transition: var(--transition);
+}
+
+.react-component-library.Calendar .CalendarModal .CalendarBox button.SetBtns:hover {
+	background: var(--primary-hover);
+}
+
+.react-component-library.Calendar .CalendarModal .CalendarBox button.SetBtns:hover svg {
+	transform: scale(0.65);
+}
+
+.react-component-library.Calendar .CalendarModal .CalendarBox div.Display {
+	background: var(--primary);
+	float: left;
+	width: calc(100% - 80px);
+	height: 40px;
+	line-height: 40px;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.react-component-library.Calendar .CalendarModal .CalendarBox .Day {
+	float: left;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.react-component-library.Calendar .CalendarModal .CalendarBox .Day.Weekday {
+	background: var(--secondary);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.react-component-library.Calendar .CalendarModal .CalendarBox .Day.Today {
+	background: var(--primary-light);
+	color: var(--primary);
+	font-weight: bold;
+}
+
+.react-component-library.Calendar .CalendarModal .CalendarBox .Day.SelectedDay {
+	background: var(--primary);
+	color: white;
+	font-weight: bold;
+}
+
+.react-component-library.Calendar .CalendarModal .CalendarBox .Day.NotToday:hover { background: rgba(0,0,0,0.1); }
+.react-component-library.Calendar .CalendarModal .CalendarBox .Day.Today:hover { background: var(--input-background); }
+.react-component-library.Calendar .CalendarModal .CalendarBox .Day.SelectedDay:hover { background: var(--primary-hover); }

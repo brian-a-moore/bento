@@ -1,0 +1,55 @@
+.react-component-library.CheckBox .CheckBox-Item {
+	background: var(--input-background);
+	float: left;
+	width: 100%;
+	height: 30px;
+	margin: 0 0 16px 0;
+	box-shadow: var(--shadow);
+	cursor: pointer;
+	transition: var(--transition);
+	color: var(--text);
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.react-component-library.CheckBox .CheckBox-Item:hover {
+	box-shadow: 0 0 5px var(--primary);
+}
+
+.react-component-library.CheckBox .CheckBox-Item.Active {
+	background:  var(--primary); color: #FFFFFF;
+}
+
+.react-component-library.CheckBox .CheckBox-Item .Box {
+	float: left;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.react-component-library.CheckBox .CheckBox-Item .Box span {
+	background: #FFFFFF;
+	width: 15px; height: 15px;
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+.react-component-library.CheckBox .CheckBox-Item .Box span svg {
+	float: left;
+	width: 100%; height: 100%;
+	color: var(--text);
+}
+
+.react-component-library.CheckBox .CheckBox-Item .Text {
+	float: left;
+	width: calc(100% - 30px);
+	height: 30px;
+	line-height: 30px;
+	padding: 0 16px 0 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	pointer-events: none;
+	user-select: none;
+}

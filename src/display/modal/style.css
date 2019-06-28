@@ -1,0 +1,79 @@
+.react-component-library.Modal {
+	background: rgba(0,0,0,0.3);
+	position: fixed;
+	top: 0; left: 0;
+	width: 100vw; height: 100vh;
+	z-index: 99;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 32px;
+	opacity: 0;
+}
+
+.react-component-library.Modal.Open { animation: Modal 0.3s ease forwards; }
+.react-component-library.Modal.Closed { animation: ModalClose 0.3s ease forwards; }
+
+.react-component-library.Modal .Box {
+	background: white;
+	width: 100%;
+	max-width: 400px;
+	padding: 16px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	opacity: 0;
+	transform: scale(0);
+	border-radius: 4px;
+}
+
+.react-component-library.Modal.Open .Box { animation: Box 0.3s ease forwards; }
+.react-component-library.Modal.Closed .Box { animation: BoxClose 0.3s ease forwards; }
+ 
+.react-component-library.Modal .Box h1 {
+	float: left;
+	width: 100%;
+	margin: 0 0 16px 0;
+	padding: 0;
+	color: var(--primary);
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.react-component-library.Modal .Box p {
+	float: left;
+	width: 100%;
+	margin: 0 0 16px 0;
+	padding: 16px 0;
+	color: var(--text);
+}
+
+@keyframes Modal {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes Box {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes ModalClose {
+	100% { opacity: 0; }
+	0% { opacity: 1; }
+}
+
+@keyframes BoxClose {
+	100% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,35 @@
+.react-component-library.Selector {
+	background: var(--input-background);
+	position: relative;
+	float: left;
+	height: 40px;
+	margin: 0 0 16px 0;
+	border: 1px solid rgba(0,0,0,0.1);
+	box-shadow: var(--shadow);
+	border-radius: 4px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.react-component-library.Selector:hover {
+	box-shadow: 0 0 5px var(--primary);
+}
+
+.react-component-library.Selector .Selector-Item {
+	float: left;
+	height: 38px;
+	line-height: 38px;
+	padding: 0 32px;
+	transition: var(--transition);
+	cursor: pointer;
+	user-select: none;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.react-component-library.Selector .Selector-Item.Active {
+	background: var(--primary);
+	color: white;
+}

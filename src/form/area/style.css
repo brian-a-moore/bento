@@ -1,0 +1,28 @@
+.react-component-library.Area {
+	float: left;
+	width: 100%;
+	margin: 0 0 16px 0;
+}
+
+.react-component-library.Area textarea {
+	float: left;
+	width: 100%;
+	height: 120px;
+	padding: 10px;
+	resize: none;
+	border: 1px solid rgba(0,0,0,0.1);
+	outline: none;
+	box-shadow: var(--shadow);
+	transition: var(--transition);
+	color: var(--text);
+	border-radius: 4px;
+}
+
+.react-component-library.Area textarea:hover {
+	box-shadow: 0 0 5px var(--primary);
+}
+
+.react-component-library.Area textarea:focus {
+	border: 1px solid var(--primary);
+	color: var(--primary);
+}
